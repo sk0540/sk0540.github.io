@@ -14,9 +14,9 @@
         </header>
         <div id="content">
             <main id="blog">
-                <article v-for="content in contents" :key="content.id">
+                <article v-for="content in contents">
                     <h1 class="aricle-title">{{content.title}}</h1>
-                    <p class="article-content">{{content.body}}</p>
+                    <div class="article-content" v-html="content.body"></div>
                     <hr>
                 </article>
     
