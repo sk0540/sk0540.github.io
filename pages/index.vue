@@ -14,9 +14,9 @@
         </header>
         <div id="content">
             <main id="blog">
-                <article>
-                    <h1 class="aricle-title">タイトル</h1>
-                    <p class="article-content">本文</p>
+                <article v-for="content in contents" :key="content.id">
+                    <h1 class="aricle-title">{{content.title}}</h1>
+                    <p class="article-content">{{content.body}}</p>
                     <hr>
                 </article>
     
@@ -31,8 +31,21 @@
 </template>
 
 <script>
-export default {}
+
+import axios from 'axios'
+export default {
+  async asyncData() {
+    const { data } = await axios.get(
+      'https://sk0540.microcms.io/api/v1/blog',
+      {
+        headers: { 'X-MICROCMS-API-KEY': '66747e9fa86b4e99a5016f26fdfc255a9eec' }
+      }
+    )
+    return data
+  }
+}
 </script>
+
 
 <style>
 body {
