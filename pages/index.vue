@@ -1,3 +1,40 @@
+<template>
+    <div id="wrapper">
+        <header>
+            <div id="title">
+                <h1>sk0540</h1>
+                <p>sk0540のblog</p>
+            </div>
+            <nav>
+    
+                <a href=#top>Top</a>
+                <a href=#about>About</a>
+                <a class="selected" href=#blog>(Blog)</a>
+            </nav>
+        </header>
+        <div id="content">
+            <main id="blog">
+                <article>
+                    <h1 class="aricle-title">タイトル</h1>
+                    <p class="article-content">本文</p>
+                    <hr>
+                </article>
+    
+    
+            </main>
+            <aside>
+                サイドメニュー予定地
+            </aside>
+        </div>
+      <footer></footer>
+    </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style>
 body {
     background: #ddd;
     color: #333;
@@ -142,3 +179,4 @@ hr {
         display: flex;
     }
 }
+</style>
