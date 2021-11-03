@@ -14,16 +14,16 @@
         </header>
         <div id="content">
             <main id="blog">
-                <article v-for="content in contents" :key="content.id">
-                    <h1 class="aricle-title">{{content.title}}</h1>
-                    <p class="article-content">{{content.body}}</p>
+                <article>
+                    <h1 class="aricle-title">タイトル</h1>
+                    <p class="article-content">本文</p>
                     <hr>
                 </article>
     
     
             </main>
             <aside>
-                サイドメニュー予定地です
+                サイドメニュー予定地
             </aside>
         </div>
       <footer></footer>
@@ -31,13 +31,14 @@
 </template>
 
 <script>
-
 import axios from 'axios'
 export default {
   async asyncData() {
     const { data } = await axios.get(
+      // your-service-idËoÍnµ¸”πidknM€HfO`UD
       'https://sk0540.microcms.io/api/v1/blog',
       {
+        // your-api-keyËoÍnapi-keyknM€HfO`UD
         headers: { 'X-MICROCMS-API-KEY': '66747e9fa86b4e99a5016f26fdfc255a9eec' }
       }
     )
@@ -45,7 +46,6 @@ export default {
   }
 }
 </script>
-
 
 <style>
 body {
