@@ -14,16 +14,16 @@
         </header>
         <div id="content">
             <main id="blog">
-                <article>
-                    <h1 class="aricle-title">タイトル</h1>
-                    <p class="article-content">本文</p>
+                <article v-for="content in contents" :key="content.id">
+                    <h1 class="aricle-title">{{content.title}}</h1>
+                    <p class="article-content">{{content.body}}</p>
                     <hr>
                 </article>
     
     
             </main>
             <aside>
-                サイドメニュー予定地
+                サイドメニュー予定地です
             </aside>
         </div>
       <footer></footer>
