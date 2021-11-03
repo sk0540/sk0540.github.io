@@ -23,7 +23,7 @@
     
             </main>
             <aside>
-                サイドメニュー予定地
+                サイドメニュー予定地です
             </aside>
         </div>
       <footer></footer>
