@@ -5,7 +5,7 @@ on:
     types:[update]
   push:
     branches:
-      - main]
+      - main
   pull_request:
 
 jobs:
