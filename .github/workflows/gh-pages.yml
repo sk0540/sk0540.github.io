@@ -1,16 +1,15 @@
 name: GitHub Pages
 
 on:
-  repository_dispatch:
-    types:[update]
   push:
     branches:
       - main
   pull_request:
 
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
