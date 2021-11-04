@@ -23,7 +23,7 @@
     
             </main>
             <aside>
-                サイドメニュー予定地ですサイドメニュー予定地です
+                <p>サイドメニュー予定地ですサイドメニュー予定地ですサイドメニュー予定地です</p>
             </aside>
         </div>
       <footer></footer>
@@ -61,6 +61,7 @@ body {
 #wrapper {
     background: #fff;
     margin: 0 auto;
+    padding: 0 2em;
     max-width: 60em;
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ footer {
     background: #444;
     color: #fff;
     padding: 1em;
-    margin: 0 3em;
+    margin: 0;
     width: auto;
     min-width: 18em;
 }
@@ -108,13 +109,11 @@ footer {
 }
 
 main {
-    margin: 3em;
     max-width: 32em;
 }
 
 aside {
-    margin: 5em 3em;
-    min-width: 16em;
+    max-width: 32em;
 }
 
 h1,
@@ -193,8 +192,20 @@ hr {
 }
 
 @media screen and (min-width: 600px) {
+
+    #wrapper {
+        padding: 0 3em; 
+    }
+
     #content {
         display: flex;
     }
+
+
+    aside {
+        width: 16em;
+        padding-left: 3em;
+    }
+
 }
 </style>
