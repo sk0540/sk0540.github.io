@@ -23,7 +23,7 @@
     
             </main>
             <aside>
-                サイドメニュー予定地です
+                サイドメニュー予定地ですサイドメニュー予定地です
             </aside>
         </div>
       <footer></footer>
@@ -55,6 +55,7 @@ body {
     font-family: sans-serif;
     line-height: 2em;
     margin: 0;
+    width: 100vw;
 }
 
 #wrapper {
@@ -72,7 +73,7 @@ footer {
     background: #444;
     color: #fff;
     padding: 1em;
-    margin: 0 2em;
+    margin: 0 3em;
     width: auto;
     min-width: 18em;
 }
@@ -86,6 +87,17 @@ nav {
     text-align: right;
 }
 
+nav a {
+    color: #fff;
+    padding: 0.25em 1em 0 1em;
+    line-height: 2.5em;
+}
+
+nav a:hover {
+    background: #654;
+    border-radius: 0.25em;
+}
+
 footer {
     border-radius: 1em 1em 0 0;
     margin-top: auto;
@@ -96,12 +108,12 @@ footer {
 }
 
 main {
-    margin: 2em 2em;
+    margin: 3em;
     max-width: 32em;
 }
 
 aside {
-    margin: 4em 2em;
+    margin: 5em 3em;
     min-width: 16em;
 }
 
@@ -141,15 +153,8 @@ a {
     text-decoration: none;
 }
 
-nav a {
-    color: #fff;
-    padding: 0.25em 1em 0 1em;
-    line-height: 2.5em;
-}
-
-a:hover {
-    background: #654;
-    border-radius: 0.25em;
+img {
+    max-width: 100%;
 }
 
 .selected {
@@ -187,7 +192,7 @@ hr {
     margin: 0;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 600px) {
     #content {
         display: flex;
     }
