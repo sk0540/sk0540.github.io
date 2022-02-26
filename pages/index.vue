@@ -13,13 +13,8 @@
             </nav>
         </header>
         <div id="content">
-            <main id="blog">
-                <article v-for="content in contents">
-                    <h1 class="aricle-title">{{content.title}}</h1>
-                    <div class="article-content" v-html="content.body"></div>
-                    <hr>
-                </article>
-    
+            <main id="top">
+                sk0540です。このwebサイトにWebデザインとプログラミングの創作物を載せていく予定です。
     
             </main>
             <aside>
@@ -31,20 +26,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-export default {
-  async asyncData() {
-    const { data } = await axios.get(
-      // your-service-idËoÍnµ¸”πidknM€HfO`UD
-      'https://sk0540.microcms.io/api/v1/blog',
-      {
-        // your-api-keyËoÍnapi-keyknM€HfO`UD
-        headers: { 'X-MICROCMS-API-KEY': '66747e9fa86b4e99a5016f26fdfc255a9eec' }
-      }
-    )
-    return data
-  }
-}
 </script>
 
 <style>
