@@ -49,8 +49,8 @@ export default {
 
 <style>
 body {
-    background: #ddd;
-    color: #333;
+    background: #dde0e3;
+    color: #222;
     font-size: 16px;
     font-family: sans-serif;
     line-height: 2em;
@@ -61,7 +61,7 @@ body {
 #wrapper {
     background: #fff;
     margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 0 2em;
     max-width: 60em;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@ body {
 header,
 footer {
     display: flex;
-    background: #444;
+    background: #333;
     color: #fff;
     padding: 1em;
     margin: 0;
@@ -84,7 +84,7 @@ header {
 }
 
 nav {
-    margin: auto 0 0 auto;
+    margin: auto 2em 0 auto;
     text-align: right;
 }
 
