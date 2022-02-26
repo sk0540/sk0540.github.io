@@ -61,7 +61,7 @@ body {
 #wrapper {
     background: #fff;
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 1.5em;
     max-width: 60em;
     display: flex;
     flex-direction: column;
@@ -90,6 +90,7 @@ nav {
 
 nav a {
     color: #fff;
+    font-weight: bold;
     padding: 0.25em 1em 0 1em;
     line-height: 2.5em;
 }
@@ -105,15 +106,15 @@ footer {
 }
 
 #content {
-    margin: 0 auto;
+    margin: 3em 1em;
 }
 
 main {
-    max-width: 32em;
+    max-width: 34em;
 }
 
 aside {
-    max-width: 32em;
+    max-width: 34em;
 }
 
 h1,
@@ -180,24 +181,26 @@ hr {
     background: #0cf;
     content: "";
     left: 0;
-    top: 0;
+    top: 0.125em;
     height: 1.25em;
     width: 1.25em;
     border-radius: 0.125em;
 }
 
 #title p {
-    padding-left: 3.5rem;
+    padding-left: 3rem;
     margin: 0;
 }
 
 @media screen and (min-width: 600px) {
 
     #wrapper {
-        padding: 0 3em; 
+        padding: 0 2.5em; 
+
     }
 
     #content {
+        margin: 3em auto;
         display: flex;
     }
 
