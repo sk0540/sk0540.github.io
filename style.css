@@ -143,9 +143,7 @@ footer {
     margin: 0 0.5em;
 }
 
-main {
-    width: 36em;
-}
+
 
 aside {
     max-width: 36em;
@@ -194,14 +192,16 @@ aside {
 
 }
 
-.article-title:hover {
-    color: #555;
-}
-
 .article-title a{
     color: #222;
     border-bottom: none;
 }
+
+.title-link:hover {
+    color: #555;
+}
+
+
 .active{
     color: #555;
     font-weight: bold;
