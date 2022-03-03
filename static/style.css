@@ -182,7 +182,7 @@ aside {
 }
 
 
-.article-title::before{
+.article-title:before{
     display: inline-block;
     position: absolute;
     background: #8cf;
@@ -196,13 +196,16 @@ aside {
 
 }
 
+.article-title:hover {
+    color: #555;
+}
+
 .article-title a{
     color: #222;
     border-bottom: none;
 }
-
-.nuxt-link-exact-active{
-    color: #444;
+.active{
+    color: #555;
     font-weight: bold;
     border-bottom: none;
 }

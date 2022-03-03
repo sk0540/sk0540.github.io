@@ -7,9 +7,9 @@
             </div>
             <nav>
     
-                <a class="selected" href=#about>Top</a>
-                <a href=#works>Works</a>
-                <a href="blog/" >Blog</a>
+                <nuxt-link  class="selected" to="/#about">Top</nuxt-link>
+                <nuxt-link to="/#works">Works</nuxt-link>
+                <nuxt-link to="/myblog/">Blog</nuxt-link>
             </nav>
         </header>
         <div id="content">
