@@ -15,8 +15,8 @@
         <div id="content">
             <blog-component :articles="blogdata" />
             <aside>
-                <h2 >Articles<span class="subtext">記事一覧</span></h2>
-                <ul class="articles-array">
+                <h2 class="article-list">Articles<span class="subtext">記事一覧</span></h2>
+                <ul>
                     <li class="article-link" v-for="content in blogdata.contents"><nuxt-link :to="`/myblog/${content.id}/`">{{content.title}}</nuxt-link></li>
                 </ul>
             </aside>
@@ -33,7 +33,13 @@ export default {
   components:{
       BlogComponent,
   },
-    
+  
+  head(){
+    return{
+      title:'sk0450のblog',
+    }
+  },
+
   async asyncData({ $microcms }) {
     const blogdata = await $microcms.get({
       endpoint: 'blog',

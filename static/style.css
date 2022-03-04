@@ -112,6 +112,7 @@ header {
 }
 
 nav {
+    min-width: 0;
     margin: auto 1em 0 auto;
     text-align: right;
 }
@@ -216,13 +217,17 @@ time{
 }
 time:before {
     border-top: 1px solid;
-    margin-top: 0.5em;
-    margin-left: 1em;
+    margin-left: 1.5em;
     content: "";
     flex-grow: 1;
     margin-right: 1em;
     color: #ddd;
 }
+
+.article-list{
+    margin-bottom: 1.25em;
+}
+
 
 .article-link{
     position: relative;
@@ -251,6 +256,7 @@ time:before {
 
 
 #title {
+    
     margin-bottom: 0.25em;
 }
 
@@ -289,9 +295,13 @@ time:before {
         margin : 0 1em;
     }
 
+    main{
+        flex-grow: 1;
+    }
 
     aside {
-        width: 20em;
+        flex-shrink: 0;
+        width: 16em;
         padding-left: 5em;
         margin-left: auto;
     }

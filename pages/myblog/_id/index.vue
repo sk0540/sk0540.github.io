@@ -13,10 +13,10 @@
             </nav>
         </header>
         <div id="content">
-            <blog-component :articles="getblogpage()" />
+            <blog-component :articles="blog_page_data" />
             <aside>
-                <h2 >Articles<span class="subtext">記事一覧</span></h2>
-                <ul class="articles-array">
+                <h2 class="article-list">Articles<span class="subtext">記事一覧</span></h2>
+                <ul >
                     <li class="article-link" v-for="content in blogdata.contents">
                         <nuxt-link v-bind:class="[articleid==content.id ? 'active' : 'inactive']" 
                         :to="`/myblog/${content.id}/`">{{content.title}}</nuxt-link></li>
@@ -29,17 +29,24 @@
 
 <script>
 import BlogComponent from '~//components/blogpage.vue';
+//import ArticleList from '~//components/articlelist.vue';
 
 export default {
 
   components:{
       BlogComponent,
   },
-    
+  
+  head(){
+    return{
+      title:this.blog_page_data.title+'｜sk0450のblog',
+    }
+  },
   data(){
 
       return{
         articleid:'',
+        blog_page_data:{},
       }
   },
   async asyncData({ $microcms }) {
@@ -51,8 +58,8 @@ export default {
   },
 
   created(){
-
     this.articleid=this.$route.params.id;
+    this.blog_page_data=this.getblogpage();
   },
 
   methods:{
@@ -60,11 +67,11 @@ export default {
       getblogpage(){
 
 
-          const blog_page_data=
+          this.blog_page_data=
           this.blogdata.contents.find((v) => v.id == this.articleid);
           //idがページ名に一致する配列を取得
 
-          return blog_page_data
+          return this.blog_page_data
       }
   }
 }
