@@ -4,7 +4,7 @@
                 <ul >
                     <li class="article-link" v-for="content in blogdata.contents">
                         <nuxt-link v-bind:class="[articleid==content.id ? 'active' : 'inactive']" 
-                        :to="`/myblog/${content.id}/`">{{content.title}}</nuxt-link></li>
+                        :to="`/blog/${content.id}/`">{{content.title}}</nuxt-link></li>
                 </ul>
             </aside>
 </template>

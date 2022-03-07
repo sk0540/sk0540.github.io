@@ -9,7 +9,7 @@
     
                 <nuxt-link to="/#about">Top</nuxt-link>
                 <nuxt-link to="/#works">Works</nuxt-link>
-                <nuxt-link class="selected" to="/myblog/">Blog</nuxt-link>
+                <nuxt-link class="selected" to="/blog/">Blog</nuxt-link>
             </nav>
         </header>
         <div id="content">
@@ -19,7 +19,7 @@
                 <ul >
                     <li class="article-link" v-for="content in blogdata.contents">
                         <nuxt-link v-bind:class="[articleid==content.id ? 'active' : 'inactive']" 
-                        :to="`/myblog/${content.id}/`">{{content.title}}</nuxt-link></li>
+                        :to="`/blog/${content.id}/`">{{content.title}}</nuxt-link></li>
                 </ul>
             </aside>
         </div>
