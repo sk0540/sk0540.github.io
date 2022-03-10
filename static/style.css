@@ -188,6 +188,10 @@ aside {
     border-bottom: none;
 }
 
+.article-content {
+    margin-top: 1em;
+}
+
 .title-link:hover {
     color: #555;
 }
